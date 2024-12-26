@@ -1,4 +1,4 @@
-# References
-- CMOS VLSI Design, Wiley, 4/e (by. N. Weste and D. Harris)
-- Analysis and Design of Elementary MOS Amplifier Stages (by. B. Murmann)
-- Analog Circuit Design (by H. Pretl)
+## References
+- N. Weste and D. Harris, CMOS VLSI Design, Wiley, 4/e
+- B. Murmann, [Analysis and Design of Elementary MOS Amplifier Stages](https://github.com/bmurmann/Book-on-MOS-stages)
+- H. Pretl, [Analog Circuit Design](https://iic-jku.github.io/analog-circuit-design/)
