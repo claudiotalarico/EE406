@@ -98,7 +98,7 @@ If you are curious to see what version of the iic osic tools you are running use
 ### Additional software to install on your computer
 1. vscode [link](https://code.visualstudio.com/download) <-- **required**
 2. install vscode's WSL plug-in <-- **required**
-3. Matlab (or Octave) <-- **required**
+3. Matlab <-- **required**
 4. Anaconda distribution ([link](https://docs.anaconda.com/free/anaconda/install/index.html))
 5. If you decide to use anther python distribution you may need to install manually the following packages:
 ```
@@ -107,6 +107,6 @@ sudo apt install python3-tk
 pip install PyQt6
 pip install matplotlib
 ```
-7. PyLTSpice version 3.1<br>
+6. PyLTSpice version 3.1<br>
 `pip install PyLTSpice==3.1`<br>
-8. [HSPICE/ngspice Toolbox](https://web02.gonzaga.edu/faculty/talarico/vlsi/matlab.html) by M. Perrott <-- **required**
+7. [HSPICE/ngspice Toolbox](https://web02.gonzaga.edu/faculty/talarico/vlsi/matlab.html) by M. Perrott <-- **required**
