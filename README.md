@@ -101,12 +101,12 @@ If you are curious to see what version of the iic osic tools you are running use
 3. Matlab <-- **required**
 4. Anaconda distribution ([link](https://docs.anaconda.com/free/anaconda/install/index.html))
 5. If you decide to use anther python distribution you may need to install manually the following packages:
-```
-sudo apt install python3-pip
-sudo apt install python3-tk
-pip install PyQt6
-pip install matplotlib
-```
+   ```
+   sudo apt install python3-pip
+   sudo apt install python3-tk
+   pip install PyQt6
+   pip install matplotlib
+   ```
 6. PyLTSpice version 3.1<br>
-`pip install PyLTSpice==3.1`<br>
+   `pip install PyLTSpice==3.1`<br>
 7. [HSPICE/ngspice Toolbox](https://web02.gonzaga.edu/faculty/talarico/vlsi/matlab.html) by M. Perrott <-- **required**
