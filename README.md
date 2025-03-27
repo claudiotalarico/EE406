@@ -58,20 +58,21 @@ If you are curious to see what version of the iic osic tools you are running use
     The available PDKs are:<br>
     ```
     gf180mcuC
-    sg13g2
+    gf180mcuD
+    ihp-sg13g2
     sky130A
     ```
     If you want to switch to the IHP PDK type:<br>
     ```
-    iic-pdk sg13g2
+    iic-pdk ihp-sg13g2
     ``` 
     To skip typing this command every time, create a `.designinit` text file in your design directory with the following lines:
     ```
     PDK_ROOT=/foss/pdks
-    PDK=sg13g2
-    PDKPATH=/foss/pdks/sg13g2
+    PDK=ihp-sg13g2
+    PDKPATH=/foss/pdks/ihp-sg13g2
     ```
-    For more information about the sg13g2 technology lookup the [IHP github](https://github.com/IHP-GmbH/IHP-Open-PDK)
+    For more information about the ihp-sg13g2 technology lookup the [IHP github](https://github.com/IHP-GmbH/IHP-Open-PDK)
 
 12. If you have been using the iic osic tools for a while and all you want to do is to update to the newest version, pull the image with tag latest:<br>
     `docker pull hpretl/iic-osic-tools:latest` <br>
