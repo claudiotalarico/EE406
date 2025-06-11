@@ -73,9 +73,15 @@ If you are curious to see what version of the iic osic tools you are running use
     ``` 
     To skip typing this command every time, create a `.designinit` text file in your design directory with the following lines:
     ```
-    PDK_ROOT=/foss/pdks
-    PDK=ihp-sg13g2
-    PDKPATH=/foss/pdks/ihp-sg13g2
+    echo $IIC_OSIC_TOOLS_VERSION
+    export PDK=sky130A
+    export PDKPATH=$PDK_ROOT/$PDK
+    export STD_CELL_LIBRARY=sky130_fd_sc_hd
+    export KLAYOUT_PATH=$PDKPATH/libs.tech/klayout:$PDKPATH/libs.tech/klayout/tech
+    echo PDK=$PDK
+    echo PDKPATH=$PDKPATH
+    echo STD_CELL_LIBRARY=$STD_CELL_LIBRARY
+    echo KLAYOUT_PATH=$KLAYOUT_PATH
     ```
     For more information about the ihp-sg13g2 technology lookup the [IHP github](https://github.com/IHP-GmbH/IHP-Open-PDK)
 
@@ -88,8 +94,8 @@ If you are curious to see what version of the iic osic tools you are running use
 
 13. In case you need to use an older image instead of the latest do the following:<br>
    `export DOCKER_TAG=2024.12` <br>
-   `./start_x.sh`
-    That start_x.sh script that I am using is attached.
+   `./start_x.sh`<br>
+    That start_x.sh script I am using is attached.
     
 14. Following are a few CLI docker commands that may come handy:<br>
     ```
