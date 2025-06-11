@@ -34,7 +34,7 @@ and then define the variable `DESIGNS` as follows:<br>
 On Mac:<br>
 `DESIGNS="$HOME/Google Drive/My Drive/eda/designs"`<br>
 or<br>
-`DESIGNS=$HOME/Google\ Drive/My\ Drive/eda/designs`<br>
+`DESIGNS=$HOME/Google\ Drive/My\ Drive/eda/designs`<br><br>
 If needed set also the variable `DISPLAY`<br>
 *Example*<br>
 `PARAMS="${PARAMS} -e DISPLAY=host.docker.internal:0"`
@@ -86,13 +86,18 @@ If you are curious to see what version of the iic osic tools you are running use
 
     Don't forget to stop and remove containers that have become useless, and to remove images that have become useless.
 
+13. In case you need to use an older image instead of the latest do the following:<br>
+   `export DOCKER_TAG=2024.12` <br>
+   `./start_x.sh`
+    That start_x.sh script that I am using is attached.
+    
 14. Following are a few CLI docker commands that may come handy:<br>
     ```
     docker ps -a
     docker ps -a --no-trunc
     docker stop <CONTAINER_ID>
     docker rm <CONTAINER_ID>
-    docker images -a
+    docker image
     docker rmi <IMAGE_ID>
     docker inspect <IMAGE_ID>
     ```
