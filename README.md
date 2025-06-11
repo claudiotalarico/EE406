@@ -95,7 +95,7 @@ If you are curious to see what version of the iic osic tools you are running use
 13. In case you need to use an older image instead of the latest do the following:<br>
    `export DOCKER_TAG=2024.12` <br>
    `./start_x.sh`<br>
-    That start_x.sh script I am using is attached.
+    That `start_x.sh` script I am using is attached.
     
 14. Following are a few CLI docker commands that may come handy:<br>
     ```
