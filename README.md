@@ -25,11 +25,16 @@ In Unix, the Windows user's folder is accessible as:
 The default is `$HOME/eda/designs`<br>
 To change where the user data is mounted edit the `./start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
 *Example*<br>
+On Windows: <br>
 `DESIGNS="/mnt/g/My Drive/eda/designs"`<br>
 or alternatively create a link:<br>
 `ln -s /mnt/g/My\ Drive/ ghome`<br>
 and then define the variable `DESIGNS` as follows:<br>
 `DESIGNS=$HOME/ghome/eda/designs` <br><br>
+On Mac:<br>
+`DESIGNS="$HOME/Google Drive/My Drive/eda/designs"`<br>
+or<br>
+`DESIGNS=$HOME/Google\ Drive/My\ Drive/eda/designs`<br>
 If needed set also the variable `DISPLAY`<br>
 *Example*<br>
 `PARAMS="${PARAMS} -e DISPLAY=host.docker.internal:0"`
