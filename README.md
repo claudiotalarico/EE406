@@ -93,14 +93,14 @@ If you are curious to see what version of the iic osic tools you are running use
     Don't forget to stop and remove containers that have become useless, and to remove images that have become useless.
 
 13. In case you need to use an older image instead of the latest do the following:<br>
-   ```
-   export DOCKER_TAG=2024.12
-   ./start_x.sh
-   ```
+      ```
+      export DOCKER_TAG=2024.12
+      ./start_x.sh
+      ```
 
-    The `start_x.sh` script I am using is attached.
+      The `start_x.sh` script I am using is attached.
     
-15. Following are a few CLI docker commands that may come handy:<br>
+14. Following are a few CLI docker commands that may come handy:<br>
     ```
     docker ps -a
     docker ps -a --no-trunc
@@ -112,7 +112,7 @@ If you are curious to see what version of the iic osic tools you are running use
     ```
     [Look at the docker documentation for more info](https://docs.docker.com/reference/)
 
-16. Further help on setting up open source tools with Docker<br>
+15. Further help on setting up open source tools with Docker<br>
     If you need further help here is a [link](https://kwantaekim.github.io/2024/05/25/OSE-Docker/) to a step-by-step tutorial by Kwantae Kim
     
 ### Additional software to install on your computer
