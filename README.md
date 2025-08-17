@@ -98,7 +98,7 @@ If you are curious to see what version of the iic osic tools you are running use
       ```
 
       NOTE: the `start_x.sh` script I am using is attached [here](https://github.com/claudiotalarico/EE406/blob/main/start_x.sh).<br>
-      The `start_x.sh` provided with the current latest repository (2025.07) does seem to have some issues on my mac<br>
+      The `start_x.sh` provided with the current latest repository (2025.07) does seem to have some issues on my mac. The terminal does not pop up! <br>
       The easiest way to find out the availble tags is to look at the iic-osic-tools's [release notes](https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/RELEASE_NOTES.md)
     
 14. Following are a few CLI docker commands that may come handy:<br>
