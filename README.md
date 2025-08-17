@@ -68,7 +68,8 @@ If you are curious to see what version of the iic osic tools you are running use
     ihp-sg13g2
     sky130A
     ```
-    If you want to switch to the SKYWATER PDK type:<br>
+    The list of installed PDKs is shown calling the command `sak-pdk` without arguments.<br>
+    If you want to switch to another PDK e.g. the skywater PDK type:<br>
     ```
     sak-pdk sky130A
     ``` 
