@@ -106,7 +106,7 @@ If you are curious to see what version of the iic osic tools you are running use
     docker ps -a --no-trunc
     docker stop <CONTAINER_ID>
     docker rm <CONTAINER_ID>
-    docker image
+    docker image ls
     docker rmi <IMAGE_ID>
     docker inspect <IMAGE_ID>
     ```
