@@ -91,7 +91,7 @@ If you are curious to see what version of the iic osic tools you are running use
 
     Don't forget to stop and remove containers that have become useless, and to remove images that have become useless.
 
-13. In case you need to use an older image instead of the latest do the following:<br>
+13. In case you need to use an older image instead of the latest, overwrite the variable `DOCKER_TAG` in the current shell and do the following:<br>
       ```
       export DOCKER_TAG=2025.01
       ./start_x.sh
