@@ -59,7 +59,8 @@ This is your working directory where all your design data goes.<br>
 If you are curious to see what version of the iic osic tools you are running use the command: <br>
 `echo $IIC_OSIC_TOOLS_VERSION`
 
-11. The default PDK is the `sky130A`. However, the container supports also other PDKs.<br>
+11. The default PDK is the `ihp-sg13g2`. However, the container supports also other PDKs.<br>
+    For more information about the ihp-sg13g2 technology lookup the [IHP github](https://github.com/IHP-GmbH/IHP-Open-PDK)<br>
     The available PDKs are:<br>
     ```
     gf180mcuC
@@ -67,9 +68,9 @@ If you are curious to see what version of the iic osic tools you are running use
     ihp-sg13g2
     sky130A
     ```
-    If you want to switch to the IHP PDK type:<br>
+    If you want to switch to the SKYWATER PDK type:<br>
     ```
-    iic-pdk ihp-sg13g2
+    sak-pdk sky130A
     ``` 
     To skip typing this command every time, create a `.designinit` text file in your design directory with the following lines:
     ```
@@ -83,8 +84,6 @@ If you are curious to see what version of the iic osic tools you are running use
     echo STD_CELL_LIBRARY=$STD_CELL_LIBRARY
     echo KLAYOUT_PATH=$KLAYOUT_PATH
     ```
-    For more information about the ihp-sg13g2 technology lookup the [IHP github](https://github.com/IHP-GmbH/IHP-Open-PDK)
-
 12. If you have been using the iic osic tools for a while and all you want to do is to update to the newest version, pull the image with tag latest:<br>
     `docker pull hpretl/iic-osic-tools:latest` <br>
     and restart the container using the script:<br>
