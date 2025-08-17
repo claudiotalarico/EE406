@@ -97,7 +97,7 @@ If you are curious to see what version of the iic osic tools you are running use
       ./start_x.sh
       ```
 
-      The `start_x.sh` script I am using is attached [here](start_x.md).<br><br>
+      The `start_x.sh` script I am using is attached [here](start_x.sh).<br><br>
       The easiest way to find out the availble tags is to look at the iic-osic-tools's [release notes](https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/RELEASE_NOTES.md)
     
 14. Following are a few CLI docker commands that may come handy:<br>
