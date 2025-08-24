@@ -1,7 +1,7 @@
 # EE406
 ### Required EDA software
 1. Open the PowerShell and install WSL<br>
-`wsl --install -d Ubuntu-22.04`<br>
+`wsl --install -d Ubuntu-24.04`<br>
 You will be prompted to create a UNIX username and password.<br>
 This UNIX username and password have no relationship to your Windows username and password.<br>
 To avoid any confusion use a different username
