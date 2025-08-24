@@ -9,23 +9,28 @@
 
 ## Steps to setup the EDA Tools
 ### Windows OS
-Check your Windows OS support WSL2.
+1. Make sure your system have the minimum requirements to support WSL2
+documentation[https://learn.microsoft.com/en-us/windows/wsl/]
 
-Alternatively, run the following PowerShell command:
-```
-systeminfo | findstr -r /C:"^OS Name:" /C:"^OS Version:"
-```
-**Example**<br>
-The PC I am using has:
-```
-OS Name:                       Microsoft Windows 11 Pro
-OS Version:                    10.0.26100 N/A Build 26100
-```
-To see a list of all avaliable Linux distribution available<br>
+  To find the version of your Windows OS press `windows key + R` and then type `winver` in the Run dialog   box or navigate to `Start > Settings > System > About` <br>
+  Alternatively, you can also run the following PowerShell command:
+  ```
+  systeminfo | findstr -r /C:"^OS Name:" /C:"^OS Version:"
+  ```
+
+  **Example**<br>
+  The PC I am using has:
+  ```
+  OS Name:                       Microsoft Windows 11 Pro
+  OS Version:                    10.0.26100 N/A Build 26100
+  ```
+2. Install WSL2
+To see the list of all avaliable Linux distribution run the following PowerShell command<br>
 ```
 wsl.exe --list --online
 ```
-Install the latest LTS Ubuntu distribution:
+To install the latest LTS Ubuntu distribution run:
 ```
-wsl.exe --install Ubuntu-24.04
+wsl.exe --install -d Ubuntu-24.04
 ```
+
