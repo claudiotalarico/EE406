@@ -9,21 +9,22 @@
 
 ## Steps to setup the EDA Tools
 ### Windows OS
-1. Make sure your system has the minimum requirements to support WSL2 <br>
-   WSL 2 is only available in Windows 11 or Windows 10, Version 1903, Build 18362 or later.
-   For thourough documentation on WSL see the following (link)[https://learn.microsoft.com/en-us/windows/wsl/]
-   To find the version of your Windows OS press `windows key + R` and then type `winver` in the Run dialog   box or navigate to `Start > Settings > System > About`
+1. Make sure your system has the minimum requirements to support WSL2 <br><br>
+   WSL 2 is only available in Windows 11 or Windows 10, Version 1903, Build 18362 or later.<br>
+   For official documentation on WSL follow this [link](https://learn.microsoft.com/en-us/windows/wsl/)<br><br>
+   To find the version of your Windows OS press the **`windows logo key + R`** and then type **`winver`** in the Run dialog box<br>
+   or <br>
+   navigate to `Start > Settings > System > About`<br><br>
    Alternatively, you can also run the following PowerShell command:
-  ```
-  systeminfo | findstr -r /C:"^OS Name:" /C:"^OS Version:"
-  ```
-
-  **Example**<br>
-  The PC I am using has:
-  ```
-  OS Name:                       Microsoft Windows 11 Pro
-  OS Version:                    10.0.26100 N/A Build 26100
-  ```
+   ```
+   systeminfo | findstr -r /C:"^OS Name:" /C:"^OS Version:"
+   ```
+   **Example**<br>
+   My Surface Book 3 has:
+   ```
+   OS Name:                       Microsoft Windows 11 Pro
+   OS Version:                    10.0.26100 N/A Build 26100
+   ```
 2. Install WSL2
 To see the list of all avaliable Linux distribution run the following PowerShell command<br>
 ```
