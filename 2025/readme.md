@@ -9,11 +9,11 @@
 
 ## Steps to setup the EDA Tools
 ### Windows OS
-1. Make sure your system have the minimum requirements to support WSL2
-documentation[https://learn.microsoft.com/en-us/windows/wsl/]
-
-  To find the version of your Windows OS press `windows key + R` and then type `winver` in the Run dialog   box or navigate to `Start > Settings > System > About` <br>
-  Alternatively, you can also run the following PowerShell command:
+1. Make sure your system has the minimum requirements to support WSL2 <br>
+   WSL 2 is only available in Windows 11 or Windows 10, Version 1903, Build 18362 or later.
+   For thourough documentation on WSL see the following (link)[https://learn.microsoft.com/en-us/windows/wsl/]
+   To find the version of your Windows OS press `windows key + R` and then type `winver` in the Run dialog   box or navigate to `Start > Settings > System > About`
+   Alternatively, you can also run the following PowerShell command:
   ```
   systeminfo | findstr -r /C:"^OS Name:" /C:"^OS Version:"
   ```
