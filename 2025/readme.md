@@ -51,4 +51,32 @@
    ```
    wsl --list --verbose
    ```
+   It is recommended that you regularly update and upgrade your packages:
+   ```
+   sudo apt update -y && sudo apt upgrade -y
+   ```
+4. WSL and GUI apps<br><br>
+   WSL (2025-08-06) supports running Linux GUI applications (X11 and Wayland) on Windows.<br><br>
+   X11 is the most common Linux's windowing system.<br>
+   To install the apps and tools that ship with it run:<br> 
+   ```
+   sudo apt install x11-apps -y
+   ```
+   ```
+   sudo apt install xterm -y
+   ```
+   and add the following line:
+   ```
+   export LC_ALL=C
+   ```
+   to the `~/.bashrc` file.<br>
+
+   WSL 2 enables Linux GUI applications to be used on Windows.
+   - Launch Linux apps from the Windows Start menu
+   - Pin Linux apps to the Windows task bar
+   - Use alt-tab to switch between Linux and Windows apps
+   - Cut + Paste across Windows and Linux apps
+
+
+
 
