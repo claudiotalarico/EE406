@@ -49,7 +49,7 @@
    The Windows user's home directory is:<br>
    `/mnt/c/Users/<windows username>`<br><br>
    
-   **Example:**<br>
+   **Example**<br>
    >`talarico@TALARICO-SRFCBK:~$ pwd`<br>
    >`/home/talarico`
    
@@ -95,7 +95,7 @@
    `explorer \\wsl$\Ubuntu-24.04\home\<linux username>`
 
 6. **Accessing the Windows file system from WSL**<br>
-   - To make it easier to navigate the windows file system, cosider adding symbolic links.<br><br>
+   To make it easier to navigate the windows file system, cosider adding symbolic links.<br><br>
    **Example**<br>
       ```
       ln -s /mnt/c/Users/claudio ~/whome
