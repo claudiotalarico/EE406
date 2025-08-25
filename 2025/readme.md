@@ -119,19 +119,32 @@
 10. **Start the container using the script `./start_x.sh`**<br>
     But ..., before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
     1. Install and run an Xserver for Windows (MobaXterm)
-    2. Set the `DESIGNS` variable inside `./start_x.sh`
+    2. The `.Xauthority` file
+    3. Set the `DESIGNS` variable inside `./start_x.sh`
     4. Install a few required additional Linux packages
    
 11. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br>
     Among its many features MobaXterm provides a fully configured Xserver with built-in X11 forwarding to display graphical applications
 
-12. **Set the `DESIGNS` variable**<br>
+12. **The `.Xauthority` file**<br>
+    Make sure there is a file `.Xauthority` in the WSL user's home directory.<br>
+    In the unfortunate event that the `.Xauthority` does not exist, below are the steps to manually create it:
+    ```
+    cd ~
+    touch ~/.Xauthority
+    # Generate the magic cookie with 128 bit hex encoding
+    xauth add ${HOST}:0 . $(xxd -l 16 -p /dev/urandom)
+    # Verify the result and it shouldn't show any error
+    xauth list
+    ```
+    
+14. **Set the `DESIGNS` variable**<br>
     In the script `start_x.sh`, all user data is persistently mounted in the directory pointed to by the environment variable `DESIGNS`<br>
     The default is `$HOME/eda/designs`<br>
     To change where the user data is mounted edit the `start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
     **Example**
    
-13. **Install required additional packages**<br>
+15. **Install required additional Linux packages**<br>
    ```
    sudo apt -y install socat
    ```
