@@ -118,7 +118,7 @@
 
 10. **Start the container using the script `./start_x.sh`**<br>
     Before we can successfully run the script `./start_x.sh` there are a few more steps we need:
-    1. Xserver
+    1. Xserver (MobaXterm)
     2. DESIGNS variable
     3. install Linux packages
    
