@@ -25,13 +25,30 @@
    OS Name:                       Microsoft Windows 11 Pro
    OS Version:                    10.0.26100 N/A Build 26100
    ```
-2. Install WSL2
-To see the list of all avaliable Linux distribution run the following PowerShell command<br>
-```
-wsl.exe --list --online
-```
-To install the latest LTS Ubuntu distribution run:
-```
-wsl.exe --install -d Ubuntu-24.04
-```
+2. Install WSL2<br>
+   To see the list of all avaliable Linux distribution run the following PowerShell command<br>
+   ```
+   wsl.exe --list --online
+   ```
+   To install the latest LTS Ubuntu distribution run:
+   ```
+   wsl.exe --install -d Ubuntu-24.04
+   ```
+   You will be prompted to create a UNIX username and password.<br>
+   This UNIX username and password have no relationship to your Windows username and password.<br>
+   To avoid any confusion use a different username<br>
+   
+3. Start WSL <br>
+   In general, to start using WSL, open a PowerShell terminal and type:
+   ```
+   wsl ~
+   ```
+   To check which version of WSL you are running use the following PowerShell command:
+   ```PowerShell
+   wsl --list
+   ```
+   or
+   ```
+   wsl --list --verbose
+   ```
 
