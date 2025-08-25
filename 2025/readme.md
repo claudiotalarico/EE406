@@ -112,24 +112,32 @@
 6. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
 7. **Start Docker Desktop**<br>
    Start Docker and open Settings at the top menu bar. Go to Resources → WSL Integration and enable Ubuntu-24.04. This will allow us to run Docker in Ubuntu WSL terminal.
-8. **Clone the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) container onto your WSL user's home folder**
+    <p align="center">
+       <img src="./img/docker-general.png" width="800" />
+    </p>
+<p align="center">
+       <img src="./img/docker-resources.png" width="800" />
+    </p>
+
+   
+9. **Clone the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) container onto your WSL user's home folder**
    ```
    cd ~
    git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git
    ```
-9. **Browse to the iic-osic-tools directory**<br>
+10. **Browse to the iic-osic-tools directory**<br>
    ```
    cd ~/iic-osic-tools
    ```
 
-10. **Start the container using the script `./start_x.sh`**<br>
+11. **Start the container using the script `./start_x.sh`**<br>
     But ..., before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
     1. Install and run an Xserver for Windows (MobaXterm)
     2. The `.Xauthority` file
     3. Set the `DESIGNS` variable inside `./start_x.sh`
     4. Install a few required additional Linux packages
    
-11. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br>
+12. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br>
     Among its many features MobaXterm provides a fully configured Xserver with built-in X11 forwarding to display graphical applications.
     <p align="center">
        <img src="./img/mobaXterm.png" width="800" />
