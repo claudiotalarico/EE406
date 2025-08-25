@@ -130,9 +130,12 @@
     4. Install a few required additional Linux packages
    
 11. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br>
-    Among its many features MobaXterm provides a fully configured Xserver with built-in X11 forwarding to display graphical applications
+    Among its many features MobaXterm provides a fully configured Xserver with built-in X11 forwarding to display graphical applications.
+    <p align="center">
+       <img src="./img/mobaXterm.png" width="800" />
+    </p>
 
-12. **The `.Xauthority` file**<br>
+13. **The `.Xauthority` file**<br>
     Make sure there is a file `.Xauthority` in the WSL user's home directory.<br>
     In the unfortunate event that the `.Xauthority` does not exist, below are the steps to manually create it:
     ```
