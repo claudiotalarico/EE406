@@ -116,7 +116,8 @@
     <p align="center">
        <img src="./img/docker-general.png" width="800" />
     </p>
-    Go to the tab **Resources → WSL Integration** and enable Ubuntu-24.04. This will allow us to run Docker in Ubuntu WSL terminal.
+    
+   Go to the tab **Resources → WSL Integration** and enable Ubuntu-24.04. This will allow us to run Docker in Ubuntu WSL terminal.
 <p align="center">
        <img src="./img/docker-resources.png" width="800" />
     </p>
