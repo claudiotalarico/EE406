@@ -107,6 +107,9 @@
 7. **Start Docker Desktop**<br>
    Start Docker and open Settings at the top menu bar. Go to Resources → WSL Integration and enable Ubuntu-24.04. This will allow us to run Docker in Ubuntu WSL terminal.
 8. **Clone the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) container onto your WSL user's home folder**
+   ```
+   git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git
+   ```
 
 
 
