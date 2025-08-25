@@ -119,11 +119,17 @@
 10. **Start the container using the script `./start_x.sh`**<br>
     But ..., before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
     1. Install and run an Xserver for Windows (MobaXterm)
-    2. Set the DESIGNS variable inside `./start_x.sh`
-    3. Install Linux packages
+    2. Set the `DESIGNS` variable inside `./start_x.sh`
+    4. Install a few required additional Linux packages
    
 11. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br>
     Among its many features MobaXterm provides a fully configured Xserver with built-in X11 forwarding to display graphical applications
 
+12. **Set the `DESIGNS` variable**<br>
+    In the script `start_x.sh`, all user data is persistently mounted in the directory pointed to by the environment variable `DESIGNS`<br>
+    The default is `$HOME/eda/designs`<br>
+    To change where the user data is mounted edit the `start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
+    **Example**
+   
 
 
