@@ -43,11 +43,17 @@
    ```
    wsl ~
    ```
-   or select the Ubuntu app in the Window's Start Menu.<br>
+   or select the Ubuntu app in the Window's Start Menu.<br><br>
    The Linux user's home directory is:<br>
    `/home/<linux username>`<br>
    The Windows user's home directory is:<br>
    `/mnt/c/Users/<windows username>`<br><br>
+
+   To check the version of Ubuntu installed type in the WSL terminal the following command:<br>
+   ```
+   cat /etc/os-release
+   ```
+
    **Example**<br>
    >`talarico@TALARICO-SRFCBK:~$ pwd`<br>
    >`/home/talarico`
@@ -144,8 +150,9 @@
     To change where the user data is mounted edit the `start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
     **Example**
    
-15. **Install required additional Linux packages**<br>
-   ```
-   sudo apt -y install socat
-   ```
+15. **Install a few required additional Linux packages**<br>
+    ```
+    sudo apt -y install socat
+    sudo apt -y install x11-xserver-utils
+    ```
 
