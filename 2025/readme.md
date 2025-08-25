@@ -122,7 +122,8 @@
     2. DESIGNS variable
     3. install Linux packages
    
-11. **Install MobaXterm Home Edition**
+11. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br>
+    Among its many features MobaXterm provides an fully configured Xserver with built-in X11 forwarding to display graphical applications
 
 
 
