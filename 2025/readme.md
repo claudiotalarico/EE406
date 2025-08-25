@@ -131,5 +131,8 @@
     To change where the user data is mounted edit the `start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
     **Example**
    
-
+13. **Install required additional packages**<br>
+   ```
+   sudo apt -y install socat
+   ```
 
