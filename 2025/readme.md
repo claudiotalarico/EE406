@@ -103,7 +103,9 @@
       ```
       ln -s /mnt/c/Users/claudio/icloudDrv/iCloudDrive ~/ihome
       ```
-
+6. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
+7. **Start Docker Desktop**
+8. 
 
 
 
