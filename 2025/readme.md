@@ -20,7 +20,7 @@
    systeminfo | findstr -r /C:"^OS Name:" /C:"^OS Version:"
    ```
    **Example**<br>
-   My Surface Book 3 has:
+   I am using a Surface Book 3 with:
    ```
    OS Name:                       Microsoft Windows 11 Pro
    OS Version:                    10.0.26100 N/A Build 26100
