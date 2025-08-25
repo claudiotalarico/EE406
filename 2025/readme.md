@@ -133,7 +133,7 @@
    cd ~/iic-osic-tools
    ```
 
-11. **Start the container using the script `./start_x.sh`**<br>
+11. **Start the iic-osic-tools container using the script `./start_x.sh`**<br>
     But ..., before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
     1. Install and run an Xserver for Windows (MobaXterm)
     2. The `.Xauthority` file
@@ -164,27 +164,69 @@
     To change where the user data is mounted edit the `start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
     **Example**<br>
     To have all designs' data accessible from multiple platforms and multiple OS, I am going to set the `DESIGNS` variable to point to my own Google Drive.<br>
-    On my Windows machine Google Drive is mapped on the `G:` drive, so before I can really do anything I must mount the Windows' `G:` drive to a WSL's folder and have the administrative permission for it.<br> 
-    To find the uid and gid of the WSL's user (talarico) use the command:
+    On my Windows machine Google Drive is mapped on the `G:` drive, so before I can really do anything I must mount the Windows' `G:` drive to a WSL's folder and have the ownership permission for it.<br> 
+    To find out the uid and gid of the WSL's user (talarico) use linux command:
     ```
     id
     ```
-    The 
+    The uid and gid of the WSL's user are:<br>
+    `uid=1000(talarico) gid=1000(talarico)` <br><br>
     
+    The uid and gid for the Windows' user (claudio) are:<br>
+    `uid=1002(claudio) gid=513(UsersGrp)`<br>
+    
+    At this point we can finally mount the `G:` drive on WSL. Open the WLS terminal and type the following commands: 
     ```
     sudo mkdir -p /mnt/g
-    sudo mount -t drvfs G: /mnt/g
+    sudo mount -t drvfs G: /mnt/g -o metadata,uid=1000, gid=1000
     ```
-    To test the mount operation is successful run:
+    To test the mount operation was successful run:
     ```
     sudo mount -a
     ```
+    For convenience create a link to the Google Drive folder.
+    ```
+    ln -s /mnt/g/My\ Drive/ ~/ghome
+    ```
+    To make the the mounting permanent we must **modify** the **`/etc/fstab`** file.<br>
+    Add the following line to the `/etc/fstab`:<br>
+    ```
+    G: /mnt/g drvfs rw,uid=1000,gid=1000 0 0
+    ```
+    To test the changes to the fstab are successful run:
+    ```
+    sudo mount -a
+    ```
+    For `/etc/fstab` to be processed correctly on boot in modern WSL distributions, you need to enable `systemd`.<br>
+    Check that `/etc/wsl.conf` file contains the following two lines:
+    ```
+    [boot]
+    systemd=true
+    ```
+    For the `systemd` setting to take effect, you must fully shut down and restart WSL.<br>
+    Open a Windows PowerShell (not your WSL terminal) and run the following command:
+    ```
+    wsl --shutdown
+    ```
+    After it completes, you can open your WSL distribution again.<br>
     
-    
-   
 16. **Install a few required additional Linux packages**<br>
     ```
     sudo apt -y install socat
     sudo apt -y install x11-xserver-utils
     ```
+17. **start the iic-osic-tools container**<br>
+    Browse to the location of the `start_x.sh` script:
+    ```
+    cd ~/iic-osic-tools
+    ```
+    Edit the `DESIGNS` variable inside the `start_x.sh` script as follows:
+    ```
+    DESIGNS=$HOME/ghome/eda/designs
+    ```
+    and start the script:
+    ```
+    ./start_x.sh
+    ```
 
+    
