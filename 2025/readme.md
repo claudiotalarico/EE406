@@ -105,7 +105,7 @@
       ```
 6. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
 7. **Start Docker Desktop**<br>
-   Start Docker and open Settings at the top menu bar. Go Resources → WSL Integration and enable Ubuntu-24.04. This will allow us to run Docker in Ubuntu WSL terminal.
+   Start Docker and open Settings at the top menu bar. Go to Resources → WSL Integration and enable Ubuntu-24.04. This will allow us to run Docker in Ubuntu WSL terminal.
 8. 
 
 
