@@ -111,6 +111,18 @@
    cd ~
    git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git
    ```
+9. **Browse to the iic-osic-tools directory**<br>
+   ```
+   cd ~/iic-osic-tools
+   ```
+
+10. **Start the container using the script `./start_x.sh`**<br>
+    Before we can successfully run the script `./start_x.sh` there are a few more steps we need:
+    1. Xserver
+    2. DESIGNS variable
+    3. install Linux packages
+   
+11. **Install MobaXterm Home Edition**
 
 
 
