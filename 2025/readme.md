@@ -110,11 +110,13 @@
       ln -s /mnt/c/Users/claudio/icloudDrv/iCloudDrive ~/ihome
       ```
 6. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
-7. **Start Docker Desktop**<br>
-   Start Docker and open Settings at the top menu bar. Go to Resources → WSL Integration and enable Ubuntu-24.04. This will allow us to run Docker in Ubuntu WSL terminal.
+7. **Start Docker Desktop and configure it**<br>
+   Start Docker and open the Settings wheel at the top of the menu bar.<br> 
+   Go to the tab **General** and make sure the "Use the WSL 2 based engine" option is enabled.
     <p align="center">
        <img src="./img/docker-general.png" width="800" />
     </p>
+    Go to the tab **Resources → WSL Integration** and enable Ubuntu-24.04. This will allow us to run Docker in Ubuntu WSL terminal.
 <p align="center">
        <img src="./img/docker-resources.png" width="800" />
     </p>
