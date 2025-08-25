@@ -84,7 +84,7 @@
    ```
    to the `~/.bashrc` file.<br>
 
-   WSL 2 enables Linux GUI applications to be used on Windows.
+   WSL 2 enables Linux GUI applications to be used on Windows and allows to:
    - Launch Linux apps from the Windows Start menu
    - Pin Linux apps to the Windows task bar
    - Use alt-tab to switch between Linux and Windows apps
