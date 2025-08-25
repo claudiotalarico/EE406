@@ -117,13 +117,13 @@
    ```
 
 10. **Start the container using the script `./start_x.sh`**<br>
-    Before we can successfully run the script `./start_x.sh` there are a few more steps we need:
-    1. Xserver (MobaXterm)
-    2. DESIGNS variable
-    3. install Linux packages
+    But ..., before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
+    1. Install and run an Xserver for Windows (MobaXterm)
+    2. Set the DESIGNS variable inside `./start_x.sh`
+    3. Install Linux packages
    
 11. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br>
-    Among its many features MobaXterm provides an fully configured Xserver with built-in X11 forwarding to display graphical applications
+    Among its many features MobaXterm provides a fully configured Xserver with built-in X11 forwarding to display graphical applications
 
 
 
