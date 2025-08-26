@@ -114,12 +114,12 @@
    Start Docker and open the Settings wheel at the top of the menu bar.<br> 
    Go to the tab **General** and make sure the "Use the WSL 2 based engine" option is enabled.
     <p align="center">
-       <img src="./img/docker-general.png" width="800" />
+       <img src="./img/docker-general.pn" width="800" />
     </p>
     
    Go to the tab **Resources → WSL Integration** and enable Ubuntu-24.04. This will allow us to run Docker in Ubuntu WSL terminal.
 <p align="center">
-       <img src="./img/docker-resources.png" width="800" />
+       <img src="./img/docker-resources.pn" width="800" />
     </p>
 
    
