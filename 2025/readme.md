@@ -162,6 +162,8 @@
     In the script `start_x.sh`, all user data is persistently mounted in the directory pointed to by the environment variable `DESIGNS`<br>
     The default is `$HOME/eda/designs`<br>
     To change where the user data is mounted edit the `start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
+    
+    ---
     **Example**<br>
     To have all designs' data accessible from multiple platforms and multiple OS, I am going to set the `DESIGNS` variable to point to my own Google Drive.<br>
     On my Windows machine Google Drive is mapped on the `G:` drive, so before I can really do anything I must mount the Windows' `G:` drive to a WSL's folder and have ownership of it.<br> 
@@ -218,6 +220,7 @@
     ```
     DESIGNS=$HOME/ghome/eda/designs
     ```
+    ---
     
 16. **Install a few required additional Linux packages**<br>
     ```
@@ -244,4 +247,17 @@
     Visual Studio Code, along with the WSL extension, enables you to use WSL as your full-time development environment directly from VS Code.<br>
     - Visit the [VS Code install](https://code.visualstudio.com/download) page and select the **Windows installer** for your current system architecture.<br>
       Install Visual Studio Code on Windows (**not in WSL**).
+
+      ---
+      **Example**<br>
+      <p align="center">
+         <img src="./img/docker-install.png" width="800" />
+      </p>
+      
+      Download and install:<br>
+      `VSCodeUserSetup-x64-1.103.2.exe`
+      
+      ---
+      
+
     
