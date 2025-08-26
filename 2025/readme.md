@@ -280,3 +280,5 @@
       <p align="center">
          <img src="./img/vscode-extensions-2.png" width="300"/>
       </p>
+   
+      Too see only the installed extensions type **`@installed`** in the "Search Extensions in Marketplace" bar
