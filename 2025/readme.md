@@ -270,6 +270,6 @@
       </p>
       With the WSL extension installed, you will see a new Status bar item at the far left
       <p align="center">
-         <img src="./img/vscode-statusbar.png" width="200"/>
+         <img src="./img/vscode-statusbar-1.png" width="200"/>
       </p>
       
