@@ -19,13 +19,15 @@
    ```
    systeminfo | findstr -r /C:"^OS Name:" /C:"^OS Version:"
    ```
+   ---
    **Example**<br>
    I am using a Surface Book 3 with:
    ```
    OS Name:                       Microsoft Windows 11 Pro
    OS Version:                    10.0.26100 N/A Build 26100
    ```
-2. **Install WSL 2**<br>
+   ---
+3. **Install WSL 2**<br>
    To see the list of all avaliable Linux distribution use the following PowerShell command:<br>
    ```
    wsl.exe --list --online
@@ -38,7 +40,7 @@
    This UNIX username and password have no relationship to your Windows username and password.<br>
    To avoid any confusion use a different username<br>
  
-3. **Start WSL**<br>
+4. **Start WSL**<br>
    In general, to start using WSL, either open a PowerShell terminal and type:
    ```
    wsl ~
@@ -53,14 +55,14 @@
    ```
    cat /etc/os-release
    ```
-
+   ---
    **Example**<br>
    >`talarico@TALARICO-SRFCBK:~$ pwd`<br>
    >`/home/talarico`
    
    >`talarico@TALARICO-SRFCBK:~$ cd /mnt/c/Users/claudio/`<br>
    >`talarico@TALARICO-SRFCBK:/mnt/c/Users/claudio$`
-   
+   ---
    To check which version of WSL you are running use the following PowerShell command:
    ```
    wsl --list
@@ -102,6 +104,7 @@
 
 5. **Accessing the Windows file system from WSL**<br>
    To make it easier to navigate the windows file system, cosider adding symbolic links.<br><br>
+   ---
    **Example**<br>
       ```
       ln -s /mnt/c/Users/claudio ~/whome
@@ -109,9 +112,10 @@
       ```
       ln -s /mnt/c/Users/claudio/icloudDrv/iCloudDrive ~/ihome
       ```
+   ---
 6. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
 7. **Start Docker Desktop and configure it**<br>
-   Start Docker and open the Settings wheel at the top of the menu bar.<br> 
+   Start Docker and open the **Settings** wheel at the top of the menu bar.<br> 
    Go to the tab **General** and make sure the "Use the WSL 2 based engine" option is enabled.
     <p align="center">
        <img src="./img/docker-general.png" width="800" />
