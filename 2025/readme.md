@@ -264,12 +264,13 @@
       ---
     - When prompted to Select Additional Tasks during installation, be sure to check the **Add to PATH** option so you can easily open a folder in WSL using the code command.
     - Install the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).         This extension pack includes the WSL extension, in addition to the Remote - SSH, and Dev Containers extensions, enabling you to open any folder in a container, on a remote machine, or in WSL.<br><br>
-     To see the extensions installed click on the extensions icon <src="./img/vscode-extensions-icon.png"> or press **`Ctrl+Shift+x`**
+     To see the extensions installed click on the extensions icon <img src="./img/vscode-extensions-icon.png" style="width:20px;"/> or press **`Ctrl+Shift+x`**
      <p align="center">
-         <img src="./img/vscode-extensions-1.png" width="400"/>
+         <img src="./img/vscode-extensions-1.png" width="300"/>
       </p>
-      With the WSL extension installed, you will see a new Status bar item at the far left
-      <p align="center">
-         <img src="./img/vscode-statusbar-1.png" width="200"/>
-      </p>
+      With the WSL extension installed, you will see a new Status bar item at the far left 
+       <p align="center">
+      <img src="./img/vscode-statusbar-1.png" width="150"/>
+          </p>
+
       
