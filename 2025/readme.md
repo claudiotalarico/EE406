@@ -255,7 +255,7 @@
       ---
       **Example**<br>
       <p align="center">
-         <img src="./img/docker-install.png" width="800" />
+         <img src="./img/vscode-install.png" width="800" />
       </p>
       
       Download and install:<br>
