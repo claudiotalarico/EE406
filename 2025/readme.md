@@ -178,7 +178,7 @@
     At this point we can finally mount the `G:` drive on WSL. Open the WLS terminal and type the following commands: 
     ```
     sudo mkdir -p /mnt/g
-    sudo mount -t drvfs G: /mnt/g -o metadata,uid=1000, gid=1000
+    sudo mount -t drvfs G: /mnt/g -o metadata,uid=1000,gid=1000
     ```
     To test the mount operation was successful run:
     ```
@@ -209,20 +209,26 @@
     wsl --shutdown
     ```
     After it completes, you can open your WSL distribution again.<br>
+
+    Finally, browse to the location of the `start_x.sh` script:
+    ```
+    cd ~/iic-osic-tools
+    ```
+    and edit the `DESIGNS` variable inside the `start_x.sh` script as follows:
+    ```
+    DESIGNS=$HOME/ghome/eda/designs
+    ```
     
 16. **Install a few required additional Linux packages**<br>
     ```
     sudo apt -y install socat
     sudo apt -y install x11-xserver-utils
     ```
+    
 17. **start the iic-osic-tools container**<br>
     Browse to the location of the `start_x.sh` script:
     ```
     cd ~/iic-osic-tools
-    ```
-    Edit the `DESIGNS` variable inside the `start_x.sh` script as follows:
-    ```
-    DESIGNS=$HOME/ghome/eda/designs
     ```
     and start the script:
     ```
