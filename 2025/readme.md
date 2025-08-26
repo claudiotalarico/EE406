@@ -242,4 +242,6 @@
     ```
 18. **Install VS Code and the WSL extension**<br>
     Visual Studio Code, along with the WSL extension, enables you to use WSL as your full-time development environment directly from VS Code.<br>
+    - Visit the [VS Code install](https://code.visualstudio.com/download) page and select the **Windows installer** for your current system architecture.<br>
+      Install Visual Studio Code on Windows (**not in WSL**).
     
