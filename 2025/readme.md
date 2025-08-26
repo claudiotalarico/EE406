@@ -75,7 +75,7 @@
    ```
 3. **WSL and GUI apps**<br><br>
    Since 2025-08-06 WSL supports running Linux GUI applications (X11 and Wayland) on Windows.<br><br>
-   X11 has been the dominant display server protocol for Unix-like windowing systems.<br>
+   X11 has been for years the dominant display server protocol for Unix-like windowing systems.<br>
    Wayland was introduced in 2008 as a new protocol and a modern replacement for X11.<br>
    To install the apps and tools that ship with X11 run:<br> 
    ```
@@ -134,7 +134,7 @@
    ```
 
 11. **Start the iic-osic-tools container using the script `./start_x.sh`**<br>
-    But ..., before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
+    ... But, before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
     1. Install and run an Xserver for Windows (MobaXterm)
     2. The `.Xauthority` file
     3. Set the `DESIGNS` variable inside `./start_x.sh`
@@ -164,8 +164,8 @@
     To change where the user data is mounted edit the `start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
     **Example**<br>
     To have all designs' data accessible from multiple platforms and multiple OS, I am going to set the `DESIGNS` variable to point to my own Google Drive.<br>
-    On my Windows machine Google Drive is mapped on the `G:` drive, so before I can really do anything I must mount the Windows' `G:` drive to a WSL's folder and have the ownership permission for it.<br> 
-    To find out the uid and gid of the WSL's user (talarico) use linux command:
+    On my Windows machine Google Drive is mapped on the `G:` drive, so before I can really do anything I must mount the Windows' `G:` drive to a WSL's folder and have ownership of it.<br> 
+    To find out the uid and gid of the WSL's user (talarico) use the linux command:
     ```
     id
     ```
@@ -193,12 +193,12 @@
     ```
     G: /mnt/g drvfs rw,uid=1000,gid=1000 0 0
     ```
-    To test the changes to the fstab are successful run:
+    To test the changes to the `fstab` file are successful run:
     ```
     sudo mount -a
     ```
-    For `/etc/fstab` to be processed correctly on boot in modern WSL distributions, you need to enable `systemd`.<br>
-    Check that `/etc/wsl.conf` file contains the following two lines:
+    For `/etc/fstab` to be processed correctly on boot, in modern WSL distributions, you need to enable `systemd`.<br>
+    Check that the `/etc/wsl.conf` file contains the following two lines:
     ```
     [boot]
     systemd=true
