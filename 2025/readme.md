@@ -7,7 +7,7 @@
 - H. Pretl, [Analog Circuit Design](https://iic-jku.github.io/analog-circuit-design/)
 - R.J. Baker, CMOS Circuit Design, Layout and Simulation, Wiley 4/e - [cmos.edu](https://cmosedu.com/)
 
-## Steps to setup the EDA Tools on Windows OS
+## Steps to setup the IIC open source EDA tools on Windows OS
 
 1. **Make sure your system has the minimum requirements to support WSL 2** <br><br>
    WSL 2 is only available in Windows 11 or Windows 10, Version 1903, Build 18362 or later.<br>
