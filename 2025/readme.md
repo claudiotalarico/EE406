@@ -240,5 +240,6 @@
     ```
     echo $IIC_OSIC_TOOLS_VERSION
     ```
-
+18. **Install VS Code and the WSL extension**<br>
+    Visual Studio Code, along with the WSL extension, enables you to use WSL as your full-time development environment directly from VS Code<br>
     
