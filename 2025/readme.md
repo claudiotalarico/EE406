@@ -234,5 +234,11 @@
     ```
     ./start_x.sh
     ```
+    If everything goes as it should, you will see a terminal with the prompt `/foss/designs >`<br>
+    This is your working directory where all your design data goes.<br>
+    If you are curious to see what version of the iic osic tools you are running use the command:<br>
+    ```
+    echo $IIC_OSIC_TOOLS_VERSION
+    ```
 
     
