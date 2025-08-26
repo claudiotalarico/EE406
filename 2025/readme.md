@@ -175,7 +175,7 @@
     The uid and gid for the Windows' user (claudio) are:<br>
     `uid=1002(claudio) gid=513(UsersGrp)`<br>
     
-    At this point we can finally mount the `G:` drive on WSL. Open the WLS terminal and type the following commands: 
+    At this point we can finally mount the `G:` drive on WSL. Open the WSL terminal and type the following commands: 
     ```
     sudo mkdir -p /mnt/g
     sudo mount -t drvfs G: /mnt/g -o metadata,uid=1000,gid=1000
