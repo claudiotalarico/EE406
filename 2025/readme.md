@@ -262,6 +262,6 @@
       `VSCodeUserSetup-x64-1.103.2.exe`
       
       ---
-      
+      - When prompted to Select Additional Tasks during installation, be sure to check the **Add to PATH** option so you can easily open a folder in WSL using the code command.
 
     
