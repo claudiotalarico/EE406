@@ -6,7 +6,8 @@ To set up JKU's open source integrated circuits (osic) EDA tools on Windows OS f
 - [MobaXterm](https://mobaxterm.mobatek.net/). Click on the **Help** tab for the documentation 
 - [iic-osic-tools github](https://github.com/iic-jku/IIC-OSIC-TOOLS)
 - [VS code Documentation](https://code.visualstudio.com/docs)
-
+- Step by step tutorial on [Setting Up Open Source Tools with Docker](https://kwantaekim.github.io/2024/05/25/OSE-Docker/) by Kwantae Kim
+  
 ## References on Digital and Analog Design
 - S. Harris and D. Harris, Digital Design and Computer Architecture, RISC-V Edition, Morgan Kaufmann, 1/e
 - N. Weste and D. Harris, CMOS VLSI Design, Wiley, 4/e
