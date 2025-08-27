@@ -1,5 +1,6 @@
 # 
 alias ll='ls -alF'
+alias lh='ls -A -d *.'
 alias la='ls -AF'
 alias l='ls -aCF'
 alias cdwin='cd /mnt/c/Users/claudio'
