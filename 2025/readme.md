@@ -289,7 +289,7 @@
          <img src="./img/vscode-statusbar-2.png" width="300"/>
       </p>
    
-      In VS code all possible commands are accessible either navigating the menu to **`View > Command Palette`** or pressing **`Ctrl + Shift + p`**.
+      In VS code all possible commands are accessible either navigating the top menu bar to **`View > Command Palette`** or pressing<br> **`Ctrl + Shift + p`**.
 
     - Install also the recommended docker extension <img src="./img/Docker-icon.png" width="30" height="30"/>
 
