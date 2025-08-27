@@ -284,14 +284,14 @@
          <img src="./img/vscode-statusbar-1.png" width="150"/>
       </p>
 
-      Click on the context indicator icon <img src="./img/vscode-context-indicator-icon.png" width="25px" height="25px"/> at the bottom far left and run the command **Connect WSL**
+      Click on the context indicator icon <img src="./img/vscode-context-indicator-icon.png" width="30px" height="40px"/> at the bottom far left and run the command **Connect WSL**
       <p align="center">
          <img src="./img/vscode-statusbar-2.png" width="300"/>
       </p>
    
       In VS code all possible commands are accessible either navigating the menu to **`View > Command Palette`** or pressing **`Ctrl + Shift + p`**.
 
-    - Install the recommended Docker extension <img src="./img/Docker-icon.png" width="25px" height="25px"/>
+    - Install the recommended docker extension <img src="./img/Docker-icon.png" width="30" height="30"/>
 
       <p align="center">
          <img src="./img/vscode-extensions-2.png" width="300"/>
