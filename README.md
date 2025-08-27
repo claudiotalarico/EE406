@@ -98,7 +98,7 @@ If you are curious to see what version of the iic osic tools you are running use
       ```
       The easiest way to find out the availble tags is to look at the iic-osic-tools's [release notes](https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/RELEASE_NOTES.md)<br>
       **NOTE:** <br>
-      The `start_x.sh` provided with the "current" repository (2025.07) is attached [here](https://github.com/claudiotalarico/EE406/blob/main/start_x.sh).<br>
+      The `start_x.sh` provided with the repository 2025.07 is attached [here](https://github.com/claudiotalarico/EE406/blob/main/start_x.sh).<br>
       There used to be a bug (design paths with spaces in their name were not correctly handled), but it has been fixed (2025/08/27).
     
 15. Following are a few CLI docker commands that may come handy:<br>
