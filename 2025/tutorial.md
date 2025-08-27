@@ -197,10 +197,17 @@
     sudo mount -a
     ```
     For `/etc/fstab` to be processed correctly on boot, in modern WSL distributions, you need to enable `systemd`.<br>
-    Check that the `/etc/wsl.conf` file contains the following two lines:
+    Check that the `/etc/wsl.conf` file contains the following few lines:
     ```
     [boot]
-    systemd=true
+    systemd = true
+
+    [user]
+    default = talarico
+
+    [automount]
+    enabled = true
+    mountFsTab = true         
     ```
     For the `systemd` setting to take effect, you must fully shut down and restart WSL.<br>
     Open a Windows PowerShell (not your WSL terminal) and run the following command:
