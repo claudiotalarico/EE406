@@ -98,10 +98,10 @@ If you are curious to see what version of the iic osic tools you are running use
       ```
       The easiest way to find out the availble tags is to look at the iic-osic-tools's [release notes](https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/RELEASE_NOTES.md)<br>
       **NOTE:** <br>
-      The `start_x.sh` provided with the "current" repository (2025.07) does have some issues with my mac. The terminal does not pop up! <br>
-      A possible work-around is to use an older version of the `start_x.sh` script. The `start_x.sh` script I am using is attached [here](https://github.com/claudiotalarico/EE406/blob/main/start_x.sh).<br>
+      The `start_x.sh` provided with the "current" repository (2025.07) is attached [here](https://github.com/claudiotalarico/EE406/blob/main/start_x.sh).<br>
+      There used to be a bug (design paths with spaces in their name were not correctly handled), but it has been fixed (2025/08/27).
     
-14. Following are a few CLI docker commands that may come handy:<br>
+15. Following are a few CLI docker commands that may come handy:<br>
     ```
     docker ps -a
     docker ps -a --no-trunc
@@ -113,7 +113,7 @@ If you are curious to see what version of the iic osic tools you are running use
     ```
     [Look at the docker documentation for more info](https://docs.docker.com/reference/)
 
-15. Further help on setting up open source tools with Docker<br>
+16. Further help on setting up open source tools with Docker<br>
     If you need further help here is a [link](https://kwantaekim.github.io/2024/05/25/OSE-Docker/) to a step-by-step tutorial by Kwantae Kim
     
 ### Additional software to install on your computer
