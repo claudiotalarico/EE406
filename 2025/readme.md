@@ -277,21 +277,21 @@
    
       
       - "Remote Explorer" is an auxliary extension that works in conjunction with  "Remote - SSH" and "Remote - Tunnels"
-      - "Remote - SSH: Editing Configuration" is an auxiliary extension that allows to perform Remote - SSH with configuration files
+      - "Remote - SSH: Editing Configuration Files" is an auxiliary extension that allows to perform Remote - SSH with configuration files
         
-      With the WSL extension installed, you will see a new Status bar item at bottom the far left 
+      With the WSL extension installed, you will see a new Status bar item at the bottom far left 
       <p align="center">
          <img src="./img/vscode-statusbar-1.png" width="150"/>
       </p>
 
-      Click on the context indicator icon <img src="./img/vscode-context-indicator-icon.png" width="30px" height="40px"/> at the bottom far left and run the command **Connect WSL**
+      Click on the context indicator icon <img src="./img/vscode-context-indicator-icon.png" width="30px" height="40px"/> at the bottom far left and run the command **Connect to WSL**
       <p align="center">
          <img src="./img/vscode-statusbar-2.png" width="300"/>
       </p>
    
       In VS code all possible commands are accessible either navigating the menu to **`View > Command Palette`** or pressing **`Ctrl + Shift + p`**.
 
-    - Install the recommended docker extension <img src="./img/Docker-icon.png" width="30" height="30"/>
+    - Install also the recommended docker extension <img src="./img/Docker-icon.png" width="30" height="30"/>
 
       <p align="center">
          <img src="./img/vscode-extensions-2.png" width="300"/>
