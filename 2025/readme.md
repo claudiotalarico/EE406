@@ -291,7 +291,7 @@
    
       In VS code all possible commands are accessible either navigating the top menu bar to **`View > Command Palette`** or pressing<br> **`Ctrl + Shift + p`**.
 
-    - Install also the recommended docker extension <img src="./img/Docker-icon.png" width="30" height="30"/>
+    - Install also the recommended Docker extension <img src="./img/Docker-icon.png" width="30" height="30"/>
 
       <p align="center">
          <img src="./img/vscode-extensions-2.png" width="300"/>
