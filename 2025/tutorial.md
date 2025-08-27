@@ -227,7 +227,7 @@
     
 16. **Start the iic-osic-tools container**<br><br>
 
-   Browse to the location of the `start_x.sh` script:
+    Browse to the location of the `start_x.sh` script:
     ```
     cd ~/iic-osic-tools
     ```
