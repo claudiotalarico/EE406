@@ -18,7 +18,7 @@
    OS Version:                    10.0.26100 N/A Build 26100
    ```
    ---
-3. **Install WSL 2**<br>
+2. **Install WSL 2**<br><br>
    To see the list of all avaliable Linux distribution use the following PowerShell command:<br>
    ```
    wsl.exe --list --online
@@ -31,7 +31,7 @@
    This UNIX username and password have no relationship to your Windows username and password.<br>
    To avoid any confusion use a different username<br>
  
-4. **Start WSL**<br>
+3. **Start WSL**<br><br>
    In general, to start using WSL, either open a PowerShell terminal and type:
    ```
    wsl ~
@@ -66,7 +66,7 @@
    ```
    sudo apt update -y && sudo apt upgrade -y
    ```
-3. **WSL and GUI apps**<br><br>
+4. **WSL and GUI apps**<br><br>
    Since 2025-08-06 WSL supports running Linux GUI applications (X11 and Wayland) on Windows.<br><br>
    X11 has been for years the dominant display server protocol for Unix-like windowing systems.<br>
    Wayland was introduced in 2008 as a new protocol and a modern replacement for X11.<br>
@@ -89,14 +89,13 @@
    - Use alt-tab to switch between Linux and Windows apps
    - Cut + Paste across Windows and Linux apps
 
-4. **Accessing the WSL file system from Windows**<br>
+5. **Accessing the WSL file system from Windows**<br><br>
    From the Power Shell terminal run the following command:<br>
-   `explorer \\wsl$\Ubuntu-24.04\home\<linux username>`
+   `explorer \\wsl$\Ubuntu-24.04\home\<linux username>`<br>
 
-5. **Accessing the Windows file system from WSL**<br>
-
+6. **Accessing the Windows file system from WSL**<br><br>
+   `cd /mnt/c/Users/<windows username>`<br>
    To make it easier to navigate the windows file system, cosider adding symbolic links.<br>
-   `cd /mnt/c/Users/<windows username>`
 
    ---
    **Example**<br>
@@ -108,7 +107,7 @@
       ```
    ---
 7. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
-8. **Start Docker Desktop and configure it**<br>
+8. **Start Docker Desktop and configure it**<br><br>
    Start Docker and open the **Settings** wheel at the top of the menu bar.<br> 
    Go to the tab **General** and make sure the "Use the WSL 2 based engine" option is enabled.
     <p align="center">
@@ -121,30 +120,30 @@
     </p>
 
    
-9. **Clone the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) container onto your WSL user's home folder**
+9. **Clone the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) container onto your WSL user's home folder**<br>
    ```
    cd ~
    git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git
    ```
 10. **Browse to the iic-osic-tools directory**<br>
-   ```
-   cd ~/iic-osic-tools
-   ```
+    ```
+    cd ~/iic-osic-tools
+    ```
 
-11. **Start the iic-osic-tools container using the script `./start_x.sh`**<br>
+11. **Start the iic-osic-tools container using the script `./start_x.sh`**<br><br>
     ... But, before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
     1. Install and run an Xserver for Windows (MobaXterm)
     2. The `.Xauthority` file
     3. Set the `DESIGNS` variable inside `./start_x.sh`
     4. Install a few required additional Linux packages
    
-12. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br>
+12. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br><br>
     Among its many features MobaXterm provides a fully configured Xserver with built-in X11 forwarding to display graphical applications.
     <p align="center">
        <img src="./img/mobaXterm.png" width="800" />
     </p>
 
-13. **The `.Xauthority` file**<br>
+13. **The `.Xauthority` file**<br><br>
     Make sure there is a file `.Xauthority` in the WSL user's home directory.<br>
     In the unfortunate event that the `.Xauthority` does not exist, below are the steps to manually create it:
     ```
@@ -156,7 +155,7 @@
     xauth list
     ```
     
-14. **Set the `DESIGNS` variable**<br>
+14. **Set the `DESIGNS` variable**<br><br>
     In the script `start_x.sh`, all user data is persistently mounted in the directory pointed to by the environment variable `DESIGNS`<br>
     The default is `$HOME/eda/designs`<br>
     To change where the user data is mounted edit the `start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
@@ -220,14 +219,15 @@
     ```
     ---
     
-16. **Install a few required additional Linux packages**<br>
+15. **Install a few additional required Linux packages**<br><br>
     ```
     sudo apt -y install socat
     sudo apt -y install x11-xserver-utils
     ```
     
-17. **start the iic-osic-tools container**<br>
-    Browse to the location of the `start_x.sh` script:
+16. **Start the iic-osic-tools container**<br><br>
+
+   Browse to the location of the `start_x.sh` script:
     ```
     cd ~/iic-osic-tools
     ```
@@ -241,7 +241,8 @@
     ```
     echo $IIC_OSIC_TOOLS_VERSION
     ```
-18. **Install VS Code and the WSL extension**<br>
+
+17. **Install VS Code and the WSL extension**<br><br>
     Visual Studio Code, along with the WSL extension, enables you to use WSL as your full-time development environment directly from VS Code.<br>
     - Visit the [VS Code install](https://code.visualstudio.com/download) page and select the **Windows installer** for your current system architecture.<br>
       Install Visual Studio Code on Windows (**not in WSL**).
