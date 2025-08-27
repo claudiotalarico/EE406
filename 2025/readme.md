@@ -2,8 +2,10 @@ To set up JKU's open source integrated circuits (osic) EDA tools on Windows OS f
 
 ## Useful Links
 - [WSL Documentation](https://learn.microsoft.com/en-us/windows/wsl/)
-- [iic-osic-tools github]
-- [VS code]
+- [Docker Documentation](https://docs.docker.com/)
+- [MobaXterm](https://mobaxterm.mobatek.net/). Click on the **Help** tab for the documentation 
+- [iic-osic-tools github](https://github.com/iic-jku/IIC-OSIC-TOOLS)
+- [VS code Documentation](https://code.visualstudio.com/docs)
 
 ## References on Digital and Analog Design
 - S. Harris and D. Harris, Digital Design and Computer Architecture, RISC-V Edition, Morgan Kaufmann, 1/e
