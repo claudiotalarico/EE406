@@ -219,14 +219,13 @@
     ```
     ---
     
-15. **Install a few additional required Linux packages**<br><br>
+15. **Install a few additional required Linux packages**<br>
     ```
     sudo apt -y install socat
     sudo apt -y install x11-xserver-utils
     ```
     
 16. **Start the iic-osic-tools container**<br><br>
-
     Browse to the location of the `start_x.sh` script:
     ```
     cd ~/iic-osic-tools
