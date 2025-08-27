@@ -1,4 +1,4 @@
-## Setting up the JKU's open source integrated circuits (osic) EDA tools on Windows OS
+## Setting up the JKU's open source integrated circuits (osic) EDA tools on Windows OS <img src="./img/Windows-icon.png" width="40" height="40"/>
 
 1. **Make sure your system has the minimum requirements to support WSL 2** <br><br>
    WSL 2 is only available in Windows 11 or Windows 10, Version 1903, Build 18362 or later.<br>
