@@ -1,7 +1,7 @@
 # 
 alias ll='ls -alF'
-alias lh='ls -A -d *.'
 alias la='ls -AF'
+alias lh="ls -A | grep '^\.'"
 alias l='ls -aCF'
 alias cdwin='cd /mnt/c/Users/claudio'
 alias cdmoba='cd /home/claudio'
