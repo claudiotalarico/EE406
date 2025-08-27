@@ -94,7 +94,10 @@
    `explorer \\wsl$\Ubuntu-24.04\home\<linux username>`
 
 5. **Accessing the Windows file system from WSL**<br>
-   To make it easier to navigate the windows file system, cosider adding symbolic links.<br><br>
+
+   To make it easier to navigate the windows file system, cosider adding symbolic links.<br>
+   `cd /mnt/c/Users/<windows username>`
+
    ---
    **Example**<br>
       ```
@@ -104,8 +107,8 @@
       ln -s /mnt/c/Users/claudio/icloudDrv/iCloudDrive ~/ihome
       ```
    ---
-6. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
-7. **Start Docker Desktop and configure it**<br>
+7. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
+8. **Start Docker Desktop and configure it**<br>
    Start Docker and open the **Settings** wheel at the top of the menu bar.<br> 
    Go to the tab **General** and make sure the "Use the WSL 2 based engine" option is enabled.
     <p align="center">
