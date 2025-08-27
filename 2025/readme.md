@@ -270,7 +270,7 @@
       - Dev Containers 
       - WSL
 
-      To see all the extensions installed click on the extensions icon on the activity bar <img src="./img/vscode-extensions-icon.png" width="20px" height="20px"/> or press **`Ctrl+Shift+x`**
+      To see all the extensions installed click on the extensions icon on the activity bar <img src="./img/vscode-extensions-icon.png" width="25px" height="25px"/> or press **`Ctrl+Shift+x`**
       <p align="center">
          <img src="./img/vscode-extensions-1.png" width="300"/>
       </p>
@@ -284,9 +284,13 @@
          <img src="./img/vscode-statusbar-1.png" width="150"/>
       </p>
 
+      Click on the context indicator icon <img src="./img/vscode-context-inicator-icon.png" width="20px" height="20px"/> at the bottom far left and run the command **Connect WSL**
       <p align="center">
          <img src="./img/vscode-statusbar-2.png" width="300"/>
       </p>
+   
+      In VS code all commands are accessible either navigating to the `View > Command Palette` or pressing **`Ctrl + Shift + p`**.
+
 
       <p align="center">
          <img src="./img/vscode-extensions-2.png" width="300"/>
