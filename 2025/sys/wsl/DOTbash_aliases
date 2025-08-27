@@ -1,0 +1,3 @@
+# two equivalent aliases to show hidden files
+alias lh="ls -A | grep '^\.'" 
+alias hidden='ls -1 -d .*'
