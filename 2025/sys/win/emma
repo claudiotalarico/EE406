@@ -1,2 +1,0 @@
-#!/bin/bash
-/mnt/c/Program\ Files\ \(x86\)/Emacs/i686/bin/emacs "$@" &

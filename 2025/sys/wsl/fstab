@@ -1,2 +1,0 @@
-# UNCONFIGURED FSTAB FOR BASE SYSTEM
-G: /mnt/g drvfs rw,uid=1000,gid=1000 0 0
