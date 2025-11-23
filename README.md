@@ -6,7 +6,7 @@ You will be prompted to create a UNIX username and password.<br>
 This UNIX username and password have no relationship to your Windows username and password.<br>
 To avoid any confusion use a different username
 2. (Windows OS) [Install Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)<br>
-or (Mac OS) [Install Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)<br>
+or (Mac OS) [Install Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/)<br>
 3. (Windows OS) Start Ubuntu (either by typing `wsl` into the Windows's PowerShell or selecting the Ubuntu app in the Window's Start Menu) <br>
 Your unix user's home directory is:<br>
 `/home/<unix username>`<br>
