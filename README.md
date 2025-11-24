@@ -87,14 +87,16 @@ If you are curious to see what version of the iic osic tools you are running use
     echo STD_CELL_LIBRARY=$STD_CELL_LIBRARY
     echo KLAYOUT_PATH=$KLAYOUT_PATH
     ```
-12. If you have been using the iic osic tools for a while and all you want to do is to update to the newest version, pull the image with tag latest:<br>
+    **NOTE:** make sure the `.designinit` does not have any syntax error, otherwise the container's terminal does not pop up!
+    
+13. If you have been using the iic osic tools for a while and all you want to do is to update to the newest version, pull the image with tag latest:<br>
     `docker pull hpretl/iic-osic-tools:latest` <br>
     and restart the container using the script:<br>
     `start_x.sh`<br>
 
     Don't forget to stop and remove containers that have become useless, and to remove images that have become useless.
 
-13. In case you need to use an older image instead of the latest, overwrite the variable `DOCKER_TAG` in the current shell and do the following:<br>
+14. In case you need to use an older image instead of the latest, overwrite the variable `DOCKER_TAG` in the current shell and do the following:<br>
       ```
       export DOCKER_TAG=2025.01
       ./start_x.sh
