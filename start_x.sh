@@ -1,6 +1,6 @@
 #!/bin/bash
 # ========================================================================
-# Start script for DIC docker images (X11)
+# Start script for ICD@JKU docker images (X11)
 #
 # SPDX-FileCopyrightText: 2022-2025 Harald Pretl and Georg Zachl
 # Johannes Kepler University, Department for Integrated Circuits
@@ -59,12 +59,11 @@ if [ "$(docker ps -q -f name="${CONTAINER_NAME}")" ]; then
 	fi
 fi
 
-PARAMS=""
-
+# Fixed potential errors in the container due to reduced access to syscalls.
+PARAMS="--security-opt seccomp=unconfined"
 # SET YOUR DESIGN PATH RIGHT!
 if [ -z ${DESIGNS+z} ]; then
-	#DESIGNS=$HOME/eda/designs
-        DESIGNS="$HOME/Google Drive/My Drive/eda/designs"
+	DESIGNS=$HOME/eda/designs
 	if [ ! -d "$DESIGNS" ]; then
 		${ECHO_IF_DRY_RUN} mkdir -p "$DESIGNS"
 	fi
