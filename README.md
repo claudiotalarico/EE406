@@ -12,7 +12,7 @@ Your unix user's home directory is:<br>
 `/home/<unix username>`<br>
 Your Windows user's home directory is:<br>
 `/mnt/c/Users/<windows username>`
-5. clone the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) container onto your computer (for example into your user's folder)<br>
+4. clone the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) container onto your computer (for example into your user's folder)<br>
 `git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git`<br><br>
 *Example*<br>
 Windows user's folder: `C:\Users\claudio`<br>
